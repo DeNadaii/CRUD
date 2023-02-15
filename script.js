@@ -11,7 +11,7 @@ let id
 function getItensBD(){
     const jsonFromLocalStorage = JSON.parse(localStorage.getItem('dbfunc'))
 
-    if (jsonFromLocalStorage.length == 0){
+    if (jsonFromLocalStorage.length == null){
         return []
     }
     else
